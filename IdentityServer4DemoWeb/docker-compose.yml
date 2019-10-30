@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  identityserver4demoweb:
+    image: ${DOCKER_REGISTRY}identityserver4demoweb
+    build:
+      context: .
+      dockerfile: IdentityServer4DemoWeb/Dockerfile
